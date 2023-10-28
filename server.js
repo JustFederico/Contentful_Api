@@ -51,7 +51,7 @@ mongoose.connect(process.env.MONGO_DB)
 
 
 //console.log("heloo"); node server.js
-//19JJTDI5RKdcMwl9
+//
 // connect to mongoose
 // "Cannot access 'product' before initialization"
 
