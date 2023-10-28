@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express')
 const mongoose = require('mongoose');
 
@@ -35,7 +36,8 @@ app.post('/product', async (req, res) => {
 });
 
 
-mongoose.connect('mongodb+srv://waspa:19JJTDI5RKdcMwl9@cluster0.zjh7rrp.mongodb.net/')
+mongoose.connect(process.env.MONGO_DB)
+
 .then(() => {
     console.log('connected to MongoDB')
     app.listen(3000, ()=> {
